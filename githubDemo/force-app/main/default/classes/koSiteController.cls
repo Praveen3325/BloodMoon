@@ -3,6 +3,7 @@ public with sharing class koSiteController {
 
     }
     //update user details 
+    //new one
     
     @AuraEnabled
      public static void userDetailsUpdate(string Contactid,string Mobilephone , string Firstname , string Lastname , string email , date Birthdate ,  string Assistphone , string Assistname, string Gender){
