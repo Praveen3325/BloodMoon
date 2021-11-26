@@ -14,6 +14,7 @@ export default class LightningExampleAccordionConditional extends LightningEleme
     }
 
     get isMessageVisible() {
+        
         return this.activeSectionMessage.length >  0;
     }
 }
