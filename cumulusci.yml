@@ -1,0 +1,25 @@
+minimum_cumulusci_version: '3.48.2'
+project:
+    name: BloodMoon
+    package:
+        name: BloodMoon
+        api_version: '52.0'
+    git:
+        default_branch: 'main'
+    source_format: sfdx
+
+tasks:
+    robot:
+        options:
+            suites: robot/BloodMoon/tests
+            options:
+                outputdir: robot/BloodMoon/results
+
+    robot_testdoc:
+        options:
+            path: robot/BloodMoon/tests
+            output: robot/BloodMoon/doc/BloodMoon_tests.html
+
+    run_tests:
+        options:
+            required_org_code_coverage_percent: 75
